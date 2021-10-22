@@ -4,8 +4,7 @@ COPY . /front/app
 
 WORKDIR /front/app
 
-RUN npm install -g @angular/cli
-RUN npm install --dev
+RUN npm install
 
 ENV PATH /front/app/node_modules/.bin:$PATH
 
